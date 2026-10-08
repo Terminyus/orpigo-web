@@ -1,0 +1,26 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face { font-family: JBM; src: url(../node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff2); font-weight: 400; }
+@font-face { font-family: JBM; src: url(../node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-700-normal.woff2); font-weight: 700; }
+@font-face { font-family: Outfit; src: url(../node_modules/@fontsource-variable/outfit/files/outfit-latin-wght-normal.woff2); font-weight: 100 900; }
+@font-face { font-family: Outfit; src: url(../node_modules/@fontsource-variable/outfit/files/outfit-latin-ext-wght-normal.woff2); font-weight: 100 900; unicode-range: U+0100-024F; }
+html, body { margin: 0; width: 1200px; height: 630px; background: #FFFFFF; overflow: hidden; }
+.brand { position: absolute; left: 64px; top: 56px; display: flex; align-items: center; gap: 14px; font: 700 26px Outfit; letter-spacing: .16em; color: #2D3142; }
+.brand img { width: 52px; height: 52px; }
+.line { position: absolute; left: 600px; top: 150px; width: 3px; height: 200px; background: rgba(204,41,54,.22); transform: translateX(-50%); }
+.rail { position: absolute; left: 600px; width: 56px; height: 4px; background: #CC2936; opacity: .6; transform: translateX(-50%); border-radius: 2px; }
+.word { position: absolute; top: 250px; left: 600px; font: 400 128px/1 JBM; color: #2D3142; white-space: pre; transform: translate(-1.5ch, -50%); }
+.word b { color: #B01E2A; font-weight: 700; }
+.word span { color: #4B5563; }
+.slogan { position: absolute; bottom: 92px; left: 0; right: 0; text-align: center; font: 700 52px/1.1 Outfit; letter-spacing: -.02em; color: #2D3142; }
+.slogan em { font-style: normal; color: #B01E2A; }
+.foot { position: absolute; bottom: 48px; left: 0; right: 0; text-align: center; font: 500 22px Outfit; color: #6B7280; }
+</style></head>
+<body>
+  <div class="brand"><img src="../public/img/logo-192.png" alt="">ORPIGO</div>
+  <i class="rail" style="top:132px"></i><i class="line"></i><i class="rail" style="top:364px"></i>
+  <div class="word"><span>O</span><b>r</b>pigo</div>
+  <div class="slogan">Daha hızlı oku. <em>Daha çok hatırla.</em></div>
+  <div class="foot">RSVP + ORP hız okuma · iOS &amp; Android</div>
+</body></html>

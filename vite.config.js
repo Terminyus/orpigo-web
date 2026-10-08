@@ -65,8 +65,10 @@ function site() {
       handler(html, ctx) {
         const rel = path.relative(ROOT, ctx.filename);
         const depth = rel.split(path.sep).length - 1;
-        const root = depth ? '../'.repeat(depth) : './';
-        html = include(html).replaceAll('{{root}}', root).replaceAll('{{home}}', depth ? root : '');
+        // 404.html is served at arbitrary paths, so it needs absolute links.
+        const is404 = rel === '404.html';
+        const root = is404 ? BASE : depth ? '../'.repeat(depth) : './';
+        html = include(html).replaceAll('{{root}}', root).replaceAll('{{home}}', depth || is404 ? root : '');
         return prerender(html, t);
       },
     },

@@ -7,17 +7,40 @@
   <meta name="description" content="Orpigo, PDF'lerini kelime kelime, gözünün odak noktasında gösteren RSVP + ORP hız okuma uygulaması. iOS ve Android.">
   <!-- PREVIEW: remove before going live (see README) -->
   <meta name="robots" content="noindex, nofollow">
-  <meta name="theme-color" content="#FFFFFF">
-  <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <script>
-    (function () {
-      var t = null;
-      try { t = JSON.parse(localStorage.getItem('orpigo-web:v1') || '{}').theme; } catch (e) {}
-      if (t !== 'dark') t = 'light';
-      document.documentElement.dataset.theme = t;
-      document.documentElement.classList.add('js');
-    })();
+<!--@head-->
+  <link rel="canonical" href="https://orpigo.com/">
+  <link rel="alternate" hreflang="tr" href="https://orpigo.com/">
+  <link rel="alternate" hreflang="en" href="https://orpigo.com/?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://orpigo.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Orpigo">
+  <meta property="og:url" content="https://orpigo.com/">
+  <meta property="og:title" content="Orpigo — Daha hızlı oku. Daha çok hatırla.">
+  <meta property="og:description" content="PDF'lerini kelime kelime, gözünün odak noktasında oku. RSVP + ORP hız okuma uygulaması, iOS ve Android.">
+  <meta property="og:image" content="https://orpigo.com/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:locale:alternate" content="en_GB">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Orpigo — Daha hızlı oku. Daha çok hatırla.">
+  <meta name="twitter:description" content="PDF'lerini kelime kelime, gözünün odak noktasında oku.">
+  <meta name="twitter:image" content="https://orpigo.com/og.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Orpigo",
+    "description": "RSVP + ORP speed reading app. Upload a PDF and read it one word at a time at a fixed focal point.",
+    "operatingSystem": "iOS, Android",
+    "applicationCategory": "EducationalApplication",
+    "inLanguage": ["tr", "en"],
+    "url": "https://orpigo.com/",
+    "image": "https://orpigo.com/og.png",
+    "installUrl": ["https://apps.apple.com/app/id6764333807", "https://play.google.com/store/apps/details?id=com.candemsoft.orpigo"],
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "TRY", "description": "Free download; optional in-app Premium subscription" },
+    "publisher": { "@type": "Organization", "name": "Candemsoft", "url": "https://orpigo.com/" }
+  }
   </script>
   <script type="module" src="/src/main.js"></script>
 </head>

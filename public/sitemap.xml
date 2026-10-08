@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://orpigo.com/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://orpigo.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://orpigo.com/?lang=en"/>
+    <changefreq>monthly</changefreq><priority>1.0</priority>
+  </url>
+  <url><loc>https://orpigo.com/blog/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://orpigo.com/blog/hizli-okuma-nedir/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://orpigo.com/blog/orp-teknigi-nasil-calisir/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://orpigo.com/blog/daha-fazla-kitap-okuma/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://orpigo.com/support/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://orpigo.com/privacy/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://orpigo.com/terms/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://orpigo.com/delete-account/</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
+</urlset>

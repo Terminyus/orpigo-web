@@ -5,6 +5,8 @@ const dicts = { tr, en };
 const subs = new Set();
 
 function initial() {
+  const q = new URLSearchParams(location.search).get('lang');
+  if (q && dicts[q]) return q;
   try {
     const saved = localStorage.getItem('orpigo-web:lang');
     if (saved && dicts[saved]) return saved;
