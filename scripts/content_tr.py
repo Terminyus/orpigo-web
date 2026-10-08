@@ -1,0 +1,199 @@
+TR = {
+ "nav": {"how": "Nasıl çalışır", "test": "Hızını ölç", "try": "Dene", "tour": "Uygulama", "premium": "Premium", "faq": "SSS", "blog": "Blog", "download": "İndir", "theme": "Temayı değiştir", "lang": "Dil", "menu": "Menü", "close": "Kapat", "home": "Ana sayfa"},
+ "common": {"wpm": "WPM", "min": "dk", "sec": "sn", "hour": "sa", "default": "varsayılan", "measured": "senin ölçtüğün", "sample": "Örnek metin", "minutesApprox": "~{n} dk", "replay": "Baştan oynat", "estimateNote": "Orpigo süresine akıllı duraklamalar dahildir."},
+ "how": {
+  "eyebrow": "Sorun",
+  "title": "Gözün aslında zıplıyor.",
+  "lead": "Bir satırı okurken gözün kayarak ilerlemez. Kısa duraklarla kelimeden kelimeye sıçrar, satır sonunda başa döner, kimi zaman da geri gidip bir kelimeyi yeniden okur.",
+  "paragraph": "Sabah otobüsünde bir rapor açtın. Satırlar uzun, cümleler sıkışık. Gözün her kelimede kısa bir an duruyor, sonra bir sonrakine atlıyor. Bir satırın sonuna geldiğinde yeniden başa dönüyor ve bazen az önce okuduğun yere geri gidiyor.",
+  "classic": "Geleneksel okuma",
+  "orp": "Orpigo ile",
+  "jumps": "Sıçrama",
+  "regressions": "Geri dönüş",
+  "after": "Orpigo'da göz tek bir noktada durur. Sıçrayan sen değilsin; kelimeler sana gelir.",
+  "note": "Temsili animasyon. Gerçek göz hareketleri kişiye ve metne göre değişir."
+ },
+ "orp": {
+  "eyebrow": "Teknik",
+  "title": "ORP: kelimenin odak harfi",
+  "lead": "ORP (Optimal Recognition Point), bir kelimeyi tanımanın en kolay olduğu kabul edilen harftir ve genellikle ortanın biraz solunda durur. Orpigo kelimenin tamamını değil, bu harfi ortalar. Böylece her kelimede gözün tam olarak nereye bakacağı bellidir.",
+  "word": "anlayabilmek",
+  "stepA": "Kelime ortalanınca odak noktası her kelimede kayar.",
+  "stepB": "ORP harfi ortalanınca odak hep aynı yerde kalır.",
+  "tryLabel": "Kendi kelimeni yaz",
+  "tryPlaceholder": "ör. okumak",
+  "ruleTitle": "Uygulamadaki kural",
+  "ruleHead": ["Harf sayısı", "Odak harfi"],
+  "rules": [["1", "1."], ["2–8", "2."], ["9–12", "3."], ["13 ve üzeri", "4."]],
+  "ruleNote": "Noktalama işaretleri sayılmaz.",
+  "live": "{n} harf → {k}. harf"
+ },
+ "test": {
+  "eyebrow": "Kendin dene",
+  "title": "Kendi hızını ölç",
+  "lead": "İki kısa paragraf, iki ölçüm. Önce normal okuyacaksın, sonra Orpigo ile. Sonuç kartındaki sayıların ikisi de senin ölçümün.",
+  "start": "Ölçüme başla",
+  "step1": "1 / 2 · Normal oku",
+  "step1Help": "Paragrafı her zamanki hızında ve anlayarak oku. Bitince düğmeye bas.",
+  "done": "Bitirdim",
+  "step2": "2 / 2 · Orpigo ile oku",
+  "step2Help": "Hız, ölçtüğümüz normal hızının biraz üstünde başlıyor. Rahat değilsen kaydırıcıyla ayarla.",
+  "startReader": "Okumaya başla",
+  "q": "Kısa anlama sorusu",
+  "skip": "Soruyu atla",
+  "resultTitle": "Sonucun",
+  "normal": "Normal",
+  "withOrpigo": "Orpigo ile",
+  "effective": "Duraklamalar dahil, gerçek okuma süren üzerinden hesaplandı.",
+  "comprehension": "Anlama: {c} / {t} doğru",
+  "honest": "Bu tek bir ölçüm. Sonuç metne, güne ve dikkatine göre değişir. Orpigo'da hızı her zaman sen seçersin.",
+  "again": "Tekrar ölç",
+  "tooFast": "Çok hızlı geçmiş olabilirsin. İstersen tekrar dene.",
+  "a": {
+   "text": "Deniz fenerleri yüzyıllar boyunca gemicilere yol gösterdi. Gece karanlığında kıyıya yaklaşan bir gemi, ufukta beliren ışığa bakarak nerede olduğunu anlayabilirdi. Her fenerin kendine özgü bir yanıp sönme düzeni vardı; böylece denizciler bir feneri ötekinden ayırt edebiliyordu. Eskiden fenerlerde bekçiler yaşardı. Lambayı yakar, camları temizler, fırtınalı gecelerde sabaha kadar nöbet tutarlardı. Bugün fenerlerin çoğu otomatik çalışıyor ve gemiler konumlarını uydu sistemleriyle belirliyor. Yine de pek çok fener hâlâ yanıyor. Çünkü teknoloji bazen arızalanır, ama denizin üzerinde parlayan bir ışık her zaman görülebilir. Belki de bu yüzden fenerler bugün hâlâ güvenin ve sabrın simgesi sayılıyor.",
+   "q": "Metne göre denizciler fenerleri birbirinden nasıl ayırt ederdi?",
+   "options": ["Yanıp sönme düzeninden", "Işığın renginden", "Fenerin yüksekliğinden"],
+   "answer": 0
+  },
+  "b": {
+   "text": "Şehirlerde boş kalan küçük arsalar son yıllarda ortak bahçelere dönüşmeye başladı. Komşular bir araya gelip toprağı temizliyor, tahta kasalar kuruyor ve sebze yetiştiriyor. Bahçenin bakımı nöbetle yapılıyor: biri sabah sularken öteki akşam yabani otları topluyor. Hasat zamanı ürünler paylaşılıyor, fazlası da yakındaki okullara veriliyor. Bu bahçeler yalnızca domates ya da fasulye yetiştirmek için değil. Aynı sokakta yıllarca selamlaşmadan yaşamış insanlar burada tanışıyor. Çocuklar bir tohumun nasıl filiz verdiğini kendi gözleriyle görüyor. Kimi zaman bir bank, kimi zaman bir çaydanlık bahçenin en kalabalık köşesi oluyor. Küçük bir toprak parçası, bir mahallenin birbirini yeniden tanımasına yetebiliyor.",
+   "q": "Hasattan artan ürünlere ne oluyor?",
+   "options": ["Pazarda satılıyor", "Yakındaki okullara veriliyor", "Gelecek yıl için saklanıyor"],
+   "answer": 1
+  }
+ },
+ "calc": {
+  "eyebrow": "Hesapla",
+  "title": "Bu kitabı kaç dakikada bitirirsin?",
+  "lead": "Sayfa ya da kelime sayısını gir, Orpigo hızını seç. Normal süre ile Orpigo süresini yan yana gör.",
+  "pages": "Sayfa",
+  "words": "Kelime",
+  "amount": "Miktar",
+  "perPage": "Sayfa başına ~250 kelime varsayılır.",
+  "normalLabel": "Normal hızın",
+  "orpigoLabel": "Orpigo hızın",
+  "normalDefault": "Varsayılan: 238 WPM. Yetişkinlerin sessiz okuma hızı için yayımlanmış bir ortalama (Brysbaert, 2019). Kendi hızını yukarıda ölçebilirsin.",
+  "normalMeasured": "Yukarıda ölçtüğün hız.",
+  "normalTime": "Normal okuma",
+  "orpigoTime": "Orpigo ile",
+  "diff": "Fark: {t}"
+ },
+ "life": {
+  "eyebrow": "Hayatın içinden",
+  "title": "Sadece kitap için değil",
+  "lead": "Sınav notları, raporlar, sözleşmeler... Bir karta dokun, o türden kısa bir örnek okuyucuda aksın.",
+  "pick": "Bir kart seç",
+  "normally": "Normalde",
+  "withOrpigo": "Orpigo ile",
+  "assume": "Tam belge için ~{w} kelime varsayıldı. Normal hız: {n} WPM ({src}).",
+  "cards": [
+   {"id": "exam", "title": "Ders notu", "kind": "Sınav PDF'i", "words": 6000, "text": "Fotosentez, bitkilerin ışık enerjisini kimyasal enerjiye dönüştürdüğü süreçtir. Yapraklardaki kloroplastlar ışığı soğurur. Su molekülleri parçalanır ve oksijen açığa çıkar. Karbondioksit ise şekere dönüştürülür. Sınavda en sık sorulan nokta şudur: ışığa bağlı tepkimeler tilakoit zarında, ışıktan bağımsız tepkimeler ise stromada gerçekleşir. Bu iki aşamayı karıştırma."},
+   {"id": "report", "title": "İş raporu", "kind": "Çeyrek özeti", "words": 4000, "text": "Bu çeyrekte destek ekibine gelen talep sayısı geçen döneme göre azaldı. Azalmanın temel nedeni, sık sorulan sorular sayfasının yenilenmesi oldu. Ortalama yanıt süresi kısaldı, ancak hafta sonu vardiyasında bekleme süresi hâlâ hedefin üzerinde. Önerimiz, cumartesi günleri için ek bir nöbet planı hazırlanması ve gelecek çeyrekte sonuçların yeniden değerlendirilmesidir."},
+   {"id": "contract", "title": "Sözleşme", "kind": "Kira sözleşmesi", "words": 5000, "text": "Madde 4. Kira bedeli her ayın ilk beş günü içinde, kiracı tarafından kiraya verenin bildirdiği hesaba ödenir. Madde 5. Kiracı, kiralananı özenle kullanmak ve komşulara saygı göstermekle yükümlüdür. Madde 6. Taraflardan biri sözleşmeyi sona erdirmek isterse, bunu en az otuz gün önceden yazılı olarak bildirir."},
+   {"id": "article", "title": "Makale", "kind": "Dergi yazısı", "words": 2500, "text": "Uyku, öğrenmenin sessiz ortağıdır. Gün içinde edindiğimiz bilgiler gece boyunca yeniden düzenlenir. Bu yüzden sınav öncesi sabaha kadar çalışmak, çoğu zaman beklenen sonucu vermez. Düzenli bir uyku saati, kısa ama sık tekrarlar ve gün içinde kısa yürüyüşler, hatırlamayı destekleyen basit alışkanlıklardır."},
+   {"id": "thesis", "title": "Tez", "kind": "Yüksek lisans tezi", "words": 40000, "text": "Bu çalışmanın amacı, kıyı kentlerinde bisiklet kullanımını etkileyen etkenleri incelemektir. Birinci bölümde konuyla ilgili kuramsal çerçeve sunulmuştur. İkinci bölümde araştırmanın yöntemi, örneklemi ve veri toplama araçları açıklanmıştır. Üçüncü bölümde bulgular tartışılmış, son bölümde ise yerel yönetimler için öneriler geliştirilmiştir."},
+   {"id": "novel", "title": "Roman", "kind": "Kurgu", "words": 80000, "text": "Tren istasyona yaklaşırken Nehir pencereden dışarı baktı. Yağmur dinmiş, perondaki lambalar bir bir yanmıştı. Yıllardır görmediği kasaba ona hem tanıdık hem de yabancı geliyordu. Valizini aldı, derin bir nefes çekti ve kapı açılır açılmaz soğuk havaya adım attı."},
+   {"id": "manual", "title": "Kullanım kılavuzu", "kind": "Ev aleti", "words": 8000, "text": "İlk kullanımdan önce cihazı düz ve sağlam bir zemine yerleştirin. Su haznesini maksimum çizgisine kadar doldurun. Güç düğmesine basın ve gösterge ışığının yeşile dönmesini bekleyin. Cihaz çalışırken haznenin kapağını açmayın. Temizlik yapmadan önce fişi prizden çekin ve cihazın soğumasını bekleyin."},
+   {"id": "slides", "title": "Sunum notu", "kind": "Toplantı", "words": 1500, "text": "Açılış: Teşekkür et, gündemi üç maddede özetle. Birinci bölüm: geçen ayın hedefleri ve gerçekleşenler. İkinci bölüm: karşılaştığımız iki sorun ve geçici çözümler. Kapanış: önümüzdeki ay için tek bir öncelik belirle ve soruları al. Süre: en fazla on beş dakika."},
+   {"id": "newsletter", "title": "Haber bülteni", "kind": "Haftalık bülten", "words": 1200, "text": "Bu hafta bültende neler var? Mahalle kütüphanesi cumartesi günleri de açık olacak. Spor salonunda yeni başlayanlar için ücretsiz tanışma dersleri başlıyor. Sonbahar şenliği için gönüllü kayıtları açıldı. Son olarak, okurlarımızdan gelen en sevilen tarifi sayfanın sonunda bulabilirsiniz."}
+  ]
+ },
+ "classics": {
+  "eyebrow": "Klasikleri yeniden oku",
+  "title": "Kamu malı klasiklerden kısa alıntılar",
+  "lead": "Bir eser seç, ilk satırları okuyucuda aksın. Sevdiğin bir klasiğe Orpigo ile yeniden başlamak için iyi bir an.",
+  "died": "ö. {y}",
+  "source": "Tüm alıntılar kamu malı eserlerdendir. Kaynak: Vikikaynak.",
+  "items": [
+   {"author": "Ömer Seyfettin", "work": "Kaşağı", "year": "1919", "died": "1920", "text": "Ahırın avlusunda oynarken aşağıda, gümüş söğütler altında görünmeyen derenin hazin şırıltısını işitirdik. Evimiz iç çitin büyük kestane ağaçları arkasında kaybolmuş gibiydi."},
+   {"author": "Ömer Seyfettin", "work": "Pembe İncili Kaftan", "year": "1917", "died": "1920", "text": "Büyük kubbeli serin Dîvan, bugün daha sakin, daha gölgeliydi. Pencerelerden süzülen mavi, mor, sincâbî bahar ışıkları, çinilerinin yeşil derinliklerinde birikiyor, koyulaşıyordu."},
+   {"author": "Sabahattin Ali", "work": "Birdenbire Sönen Kandilin Hikâyesi", "year": "1930'lar", "died": "1948", "text": "Sıcak bir son bahar gününün nihayeti idi. Gecenin yaklaştığını gören tabiat serin bir nefes almak için kımıldıyordu. Biçilmiş tarlaların ortasında ıslak bir halat gibi parlıyarak uzanan patikaya giderken karşı tepelerin birinde yüksek bir bina gözüme ilişti."}
+  ]
+ },
+ "brief": {
+  "ticker": ["ÖRNEK METİN", "Mahalle kütüphanesi hafta sonu da açık", "Sahil yolunda bisiklet şeridi tamamlandı", "Parkta gönüllü temizlik günü cumartesi", "Hafta sonu hava serin ve parçalı bulutlu", "Belediye otobüslerine gece seferi eklendi"],
+  "eyebrow": "Sabah bülteni",
+  "title": "Günün özetini 2 dakikadan kısa sürede oku",
+  "lead": "Kahven soğumadan dört kısa haber. Bu metinler kurgusaldır ve yalnızca örnek olarak yazılmıştır.",
+  "estimate": "Bu özet {wpm} WPM'de yaklaşık {t} sürer.",
+  "label": "Örnek metin · Kurgusal",
+  "items": [
+   {"title": "Kütüphane hafta sonu da açık", "text": "Mahalle kütüphanesi bu aydan itibaren cumartesi ve pazar günleri de ziyaretçilere açık olacak. Yönetim, hafta içi çalışan okurlardan gelen talepler üzerine çalışma saatlerini uzattığını açıkladı. Hafta sonları çocuklar için masal saati düzenlenecek, yetişkinler içinse sessiz okuma salonu akşama kadar açık kalacak. Üyelik kartı olmayanlar, kimlikleriyle başvurarak aynı gün kart çıkarabilecek."},
+   {"title": "Sahil yoluna yeni bisiklet şeridi", "text": "Sahil boyunca uzanan bisiklet şeridinin son bölümü tamamlandı. Yeni şerit, iskele ile eski liman arasını kesintisiz bağlıyor. Yol boyunca dinlenme noktaları, içme suyu çeşmeleri ve bisiklet park alanları kuruldu. Yetkililer, yaya yolu ile bisiklet şeridinin farklı renklerle ayrıldığını hatırlatarak herkesi kendi şeridini kullanmaya davet etti."},
+   {"title": "Parkta gönüllü temizlik günü", "text": "Kent parkında bu cumartesi sabah saat dokuzda gönüllü temizlik günü düzenlenecek. Eldiven ve çöp torbaları organizatörler tarafından dağıtılacak. Katılımcılar gruplara ayrılarak çim alanları, oyun parkını ve göl kenarını temizleyecek. Etkinliğin sonunda gönüllülere çay ikram edilecek. Yağmur olması hâlinde etkinlik bir hafta ertelenecek."},
+   {"title": "Hafta sonu hava durumu", "text": "Hafta sonu hava serin ve parçalı bulutlu olacak. Cumartesi öğleden sonra kısa süreli sağanak bekleniyor, pazar ise güneşli geçecek. Rüzgârın sahil kesiminde zaman zaman kuvvetlenmesi öngörülüyor. Sabah ve akşam saatlerinde dışarı çıkacakların yanlarına ince bir mont almaları öneriliyor."}
+  ]
+ },
+ "try": {
+  "eyebrow": "Kendi metnin",
+  "title": "Kendi metnini dene",
+  "lead": "Bir yazı yapıştır ya da küçük bir PDF seç ve Orpigo ile oku.",
+  "placeholder": "Okumak istediğin metni buraya yapıştır…",
+  "read": "Orpigo ile oku",
+  "pdf": "PDF seç",
+  "pdfLoading": "PDF okunuyor…",
+  "pdfDone": "{p} sayfadan {w} kelime çıkarıldı.",
+  "pdfError": "Bu PDF'ten metin çıkarılamadı. Taranmış bir belge olabilir.",
+  "pdfTooBig": "Bu demo en fazla 10 MB ve ilk 30 sayfa ile çalışır. Uygulamada daha büyük belgeler de okunabilir.",
+  "empty": "Önce bir metin yapıştır.",
+  "privacy": "Her şey tarayıcında çalışır. Metnin ve PDF'in hiçbir yere gönderilmez ve kaydedilmez.",
+  "words": "{n} kelime"
+ },
+ "tour": {
+  "eyebrow": "Uygulama turu",
+  "title": "Altı adımda okumaya başla",
+  "steps": [
+   {"t": "Dilini seç", "d": "Türkçe veya İngilizce. Dili sonra ayarlardan değiştirebilirsin.", "img": "screen-language", "alt": "Dil seçim ekranı"},
+   {"t": "Tanışma turu", "d": "Canlı bir ORP önizlemesiyle Orpigo'nun nasıl okuduğunu ilk dakikada gör.", "img": "screen-onboarding-rsvp", "alt": "Tanışma turunda ORP önizlemesi"},
+   {"t": "PDF yükle", "d": "Belgeni seç, kütüphanene eklensin. Apple, Google ya da misafir olarak giriş yapabilirsin.", "img": "screen-onboarding-library", "alt": "PDF yükleme tanıtım ekranı"},
+   {"t": "Otomatik işleme", "d": "Orpigo belgendeki metni çıkarır ve okumaya hazırlar. İşlenen belgeleri çevrimdışı da okuyabilirsin.", "img": "screen-library", "alt": "Kütüphane ekranında işlenmiş belge"},
+   {"t": "Kaldığın yerden devam et", "d": "İlerlemen kaydedilir. Belgeyi açtığında kaldığın kelimeden devam edersin.", "img": "android-reader_light", "alt": "Okuma ekranı"},
+   {"t": "Hızını ayarla", "d": "Dakikada 100 ile 1000 kelime arasında, sana rahat gelen hızı seç.", "img": "screen-onboarding-speed", "alt": "Hız seçim ekranı"}
+  ]
+ },
+ "personal": {
+  "eyebrow": "Kişiselleştir",
+  "title": "Okuma deneyimi senin",
+  "lead": "Uygulamadaki ayarları burada dene. Seçimlerin bu sayfadaki tüm okuyuculara anında yansır.",
+  "theme": "Tema", "light": "Açık", "dark": "Koyu",
+  "font": "Arayüz yazı tipi",
+  "fontNote": "Okuyucu, uygulamada olduğu gibi her zaman JetBrains Mono kullanır.",
+  "size": "Yazı boyutu", "sizes": ["Küçük", "Orta", "Büyük", "XL"],
+  "pauses": "Akıllı duraklamalar",
+  "pausesNote": "Cümle sonunda 2 kat, virgülde 1,5 kat, 9 harften uzun kelimelerde 1,3 kat bekler.",
+  "demo": "Akıllı duraklamalar açıkken, noktalamada kısa bir nefes payı kalır. Uzun kelimeler biraz daha ekranda durur; kısa olanlar hızla akar. Kapatırsan, her kelime eşit sürede gösterilir."
+ },
+ "premium": {
+  "eyebrow": "Planlar",
+  "title": "Ücretsiz başla, istersen Premium'a geç",
+  "free": "Ücretsiz",
+  "pro": "Premium",
+  "freeItems": ["Sınırlı PDF yükleme", "Temel okuma hızı aralığı", "Açık ve koyu tema, 3 yazı tipi", "Akıllı duraklamalar", "Kaldığın yerden devam"],
+  "proItems": ["Sınırsız PDF ve sınırsız sayfa", "20 MB'a kadar dosya", "1000 WPM'e kadar okuma hızı", "Öncelikli destek"],
+  "credit": "Abonelik istemiyor musun? Tek seferlik PDF kredisiyle ek bir belge yükleyebilirsin.",
+  "price": "Güncel fiyatlar uygulama içinde. Abonelikler aylık ya da yıllıktır ve mağaza hesabından istediğin zaman iptal edilebilir.",
+  "limits": "Hesabına tanımlı güncel limitleri uygulamada Profil > Satın Alma Merkezi'nde görebilirsin."
+ },
+ "faq": {
+  "eyebrow": "SSS",
+  "title": "Sıkça sorulan sorular",
+  "items": [
+   ["RSVP nedir?", "RSVP (Rapid Serial Visual Presentation), kelimelerin ekranda tek tek ve art arda gösterildiği bir okuma tekniğidir. Göz sabit kalır, kelimeler odağa gelir."],
+   ["ORP nedir?", "ORP (Optimal Recognition Point), bir kelimeyi tanımanın en kolay olduğu kabul edilen harftir. Orpigo her kelimeyi bu harften hizalar ve harfi kırmızıyla gösterir."],
+   ["Hızlı okurken anlamayı kaybeder miyim?", "Çok yüksek hızlarda anlama düşebilir; bu yüzden hızı sen seçersin. Rahat ettiğin hızda başla, alıştıkça artır. Kaçırdığın bir yer olursa geri sarıp önceki cümleye dönebilirsin."],
+   ["Kendi PDF'lerimi yükleyebilir miyim?", "Evet. PDF'ini yükle, Orpigo metni çıkarıp kütüphanene ekler. Metin tabanlı PDF'ler doğrudan işlenir. Taranmış, görsel tabanlı PDF'ler için OCR gerekir."],
+   ["Kaldığım yerden devam edebilir miyim?", "Evet. İlerlemen otomatik olarak kaydedilir. Ana sayfadaki \"Kaldığın Yerden Devam Et\" kartıyla tek dokunuşla geri dönersin."],
+   ["Çevrimdışı çalışır mı?", "İşlenmiş belgelerini internet bağlantısı olmadan da okuyabilirsin. PDF yüklemek ve işlemek için bağlantı gerekir."],
+   ["Hesap açmadan deneyebilir miyim?", "Uygulamada misafir olarak devam edebilirsin. Bu sayfadaki demolar ise hiçbir hesap istemez."],
+   ["Ücretsiz mi?", "Orpigo'yu ücretsiz kullanabilirsin. Premium; sınırsız PDF, daha büyük dosyalar ve daha yüksek hız sunar. Güncel fiyatlar uygulama içinde yer alır."],
+   ["Türkçe metinleri doğru okur mu?", "Evet. Türkçe karakterler (ş, ğ, ü, ö, ç, ı) tam desteklenir. Uygulamanın arayüzü Türkçe ve İngilizcedir."],
+   ["Verilerim nerede tutulur?", "Yüklediğin PDF'ler yalnızca hesabına özel alanda saklanır ve hesabını sildiğinde kalıcı olarak silinir. Ayrıntılar Gizlilik Politikası'nda."]
+  ]
+ },
+ "final": {
+  "title": "Farklı okumaya hazır mısın?",
+  "text": "Daha hızlı oku. Daha çok hatırla. Orpigo seni bekliyor.",
+  "lead": "Uygulamayı indir, ilk PDF'ini yükle ve kendi hızında oku."
+ },
+ "legal": {"trOnly": "Bu sayfa yalnızca Türkçe olarak yayımlanmaktadır.", "back": "← Ana sayfa"}
+}

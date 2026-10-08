@@ -20,9 +20,6 @@ export function initChrome() {
   document.querySelectorAll('[data-theme-toggle]').forEach((b) =>
     b.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark')));
   store.subscribe((s, patch) => { if (patch.theme) root.dataset.theme = patch.theme; });
-  matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-    if (!store.get('theme')) root.dataset.theme = e.matches ? 'dark' : 'light';
-  });
 
   root.dataset.uiFont = store.get('uiFont');
   root.style.setProperty('--rsvp-size', `${store.get('fontSize')}px`);

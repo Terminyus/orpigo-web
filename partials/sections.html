@@ -1,0 +1,330 @@
+    <!-- 2 · Eye jumps -->
+    <section class="sec sec--how" id="how" aria-labelledby="how-title">
+      <div class="how__pin">
+        <div class="wrap">
+          <header data-reveal class="sec__head">
+            <span class="eyebrow" data-i18n="how.eyebrow"></span>
+            <h2 id="how-title" data-i18n="how.title"></h2>
+            <p class="sec__lead" data-i18n="how.lead"></p>
+          </header>
+          <div class="how__stage">
+            <div class="how__col how__col--classic">
+              <h3 class="how__label" data-i18n="how.classic"></h3>
+              <div class="how__paper">
+                <p class="how__para" data-i18n="how.paragraph"></p>
+                <i class="how__dot" aria-hidden="true"></i>
+                <div class="how__marks" aria-hidden="true"></div>
+              </div>
+              <dl class="how__stats">
+                <div><dt data-i18n="how.jumps"></dt><dd data-stat="jumps">0</dd></div>
+                <div><dt data-i18n="how.regressions"></dt><dd data-stat="back">0</dd></div>
+              </dl>
+            </div>
+            <div class="how__col how__col--orp">
+              <h3 class="how__label" data-i18n="how.orp"></h3>
+              <div class="how__paper how__paper--orp">
+                <div id="how-reader"></div>
+              </div>
+              <dl class="how__stats">
+                <div><dt data-i18n="how.jumps"></dt><dd>0</dd></div>
+                <div><dt data-i18n="how.regressions"></dt><dd>0</dd></div>
+              </dl>
+            </div>
+          </div>
+          <p class="how__after" data-i18n="how.after"></p>
+          <p class="note" data-i18n="how.note"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 · ORP -->
+    <section class="sec sec--alt" id="orp" aria-labelledby="orp-title">
+      <div class="wrap">
+        <header data-reveal class="sec__head">
+          <span class="eyebrow" data-i18n="orp.eyebrow"></span>
+          <h2 id="orp-title" data-i18n="orp.title"></h2>
+          <p class="sec__lead" data-i18n="orp.lead"></p>
+        </header>
+        <div class="orp-demo" aria-hidden="true">
+          <div class="orp-demo__stage">
+            <i class="orp-demo__line"></i>
+            <div class="orp-demo__word"></div>
+          </div>
+          <div class="orp-demo__captions">
+            <p data-cap="a" data-i18n="orp.stepA"></p>
+            <p data-cap="b" data-i18n="orp.stepB"></p>
+          </div>
+        </div>
+        <div class="orp-try">
+          <div class="orp-try__input">
+            <label for="orp-input" data-i18n="orp.tryLabel"></label>
+            <input id="orp-input" type="text" maxlength="24" autocomplete="off" spellcheck="false" data-i18n-attr="placeholder:orp.tryPlaceholder">
+            <div class="orp-try__view rsvp-box"></div>
+            <p class="orp-try__live" aria-live="polite"></p>
+          </div>
+          <div class="orp-try__rules">
+            <h3 data-i18n="orp.ruleTitle"></h3>
+            <table class="rules" data-render="rules"></table>
+            <p class="note" data-i18n="orp.ruleNote"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 · Speed test -->
+    <section class="sec" id="test" aria-labelledby="test-title">
+      <div class="wrap wrap--narrow">
+        <header data-reveal class="sec__head sec__head--center">
+          <span class="eyebrow" data-i18n="test.eyebrow"></span>
+          <h2 id="test-title" data-i18n="test.title"></h2>
+          <p class="sec__lead" data-i18n="test.lead"></p>
+        </header>
+        <div class="test card" data-state="intro">
+          <div class="test__panel" data-panel="intro">
+            <button type="button" class="btn btn--primary btn--lg" data-act="start" data-i18n="test.start"></button>
+          </div>
+          <div class="test__panel" data-panel="read" hidden>
+            <p class="test__step" data-i18n="test.step1"></p>
+            <p class="test__help" data-i18n="test.step1Help"></p>
+            <p class="test__text" data-i18n="test.a.text"></p>
+            <button type="button" class="btn btn--primary" data-act="done" data-i18n="test.done"></button>
+          </div>
+          <div class="test__panel" data-panel="qa" hidden>
+            <p class="test__step" data-i18n="test.q"></p>
+            <fieldset class="quiz"><legend></legend><div class="quiz__opts"></div></fieldset>
+            <button type="button" class="btn btn--ghost" data-act="skip" data-i18n="test.skip"></button>
+          </div>
+          <div class="test__panel" data-panel="rsvp" hidden>
+            <p class="test__step" data-i18n="test.step2"></p>
+            <p class="test__help" data-i18n="test.step2Help"></p>
+            <div id="test-reader"></div>
+          </div>
+          <div class="test__panel" data-panel="result" hidden>
+            <h3 data-i18n="test.resultTitle"></h3>
+            <div class="result">
+              <div><span data-i18n="test.normal"></span><strong data-out="normal">0</strong><small>WPM</small></div>
+              <div class="result__orp"><span data-i18n="test.withOrpigo"></span><strong data-out="orp">0</strong><small>WPM</small></div>
+            </div>
+            <p class="test__help" data-i18n="test.effective"></p>
+            <p class="test__comp" data-out="comp"></p>
+            <p class="test__warn" data-out="warn" hidden data-i18n="test.tooFast"></p>
+            <p class="note" data-i18n="test.honest"></p>
+            <button type="button" class="btn btn--ghost" data-act="again" data-i18n="test.again"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 · Calculator -->
+    <section class="sec sec--alt" id="calc" aria-labelledby="calc-title">
+      <div class="wrap">
+        <header data-reveal class="sec__head">
+          <span class="eyebrow" data-i18n="calc.eyebrow"></span>
+          <h2 id="calc-title" data-i18n="calc.title"></h2>
+          <p class="sec__lead" data-i18n="calc.lead"></p>
+        </header>
+        <div class="calc card">
+          <div class="calc__inputs">
+            <div class="field">
+              <div class="seg seg--sm" role="group" data-i18n-attr="aria-label:calc.amount">
+                <button type="button" data-unit="pages" aria-pressed="true" data-i18n="calc.pages"></button>
+                <button type="button" data-unit="words" aria-pressed="false" data-i18n="calc.words"></button>
+              </div>
+              <input id="calc-amount" type="number" inputmode="numeric" min="1" max="2000000" value="300" data-i18n-attr="aria-label:calc.amount">
+              <p class="note" data-calc="perPage" data-i18n="calc.perPage"></p>
+            </div>
+            <div class="field">
+              <label for="calc-normal"><span data-i18n="calc.normalLabel"></span> · <b data-calc="normal"></b> <small>WPM</small> <em class="tag" data-calc="normalTag"></em></label>
+              <input id="calc-normal" type="range" min="100" max="1000" step="1">
+              <p class="note" data-calc="normalNote"></p>
+            </div>
+            <div class="field">
+              <label for="calc-orp"><span data-i18n="calc.orpigoLabel"></span> · <b data-calc="orp"></b> <small>WPM</small></label>
+              <input id="calc-orp" type="range" min="100" max="1000" step="10" value="350">
+            </div>
+          </div>
+          <div class="calc__out" aria-live="polite">
+            <div class="bar"><span data-i18n="calc.normalTime"></span><div class="bar__track"><i data-bar="normal"></i></div><strong data-calc="tNormal"></strong></div>
+            <div class="bar bar--orp"><span data-i18n="calc.orpigoTime"></span><div class="bar__track"><i data-bar="orp"></i></div><strong data-calc="tOrp"></strong></div>
+            <p class="calc__diff" data-calc="diff"></p>
+            <p class="note" data-i18n="common.estimateNote"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 · Everyday reading -->
+    <section class="sec" id="life" aria-labelledby="life-title">
+      <div class="wrap">
+        <header data-reveal class="sec__head">
+          <span class="eyebrow" data-i18n="life.eyebrow"></span>
+          <h2 id="life-title" data-i18n="life.title"></h2>
+          <p class="sec__lead" data-i18n="life.lead"></p>
+        </header>
+      </div>
+      <div class="marquee">
+        <ul class="marquee__list" data-render="life"></ul>
+      </div>
+      <div class="wrap">
+        <div class="life-player card" hidden>
+          <div class="life-player__head">
+            <h3 data-life="title"></h3>
+            <span class="tag" data-i18n="common.sample"></span>
+          </div>
+          <div id="life-reader"></div>
+          <div class="life-times">
+            <div><span data-i18n="life.normally"></span><strong data-life="normal"></strong></div>
+            <div class="life-times__orp"><span data-i18n="life.withOrpigo"></span><strong data-life="orp"></strong></div>
+          </div>
+          <p class="note" data-life="assume"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7 · Classics -->
+    <section class="sec sec--alt" id="classics" aria-labelledby="classics-title">
+      <div class="wrap">
+        <header data-reveal class="sec__head">
+          <span class="eyebrow" data-i18n="classics.eyebrow"></span>
+          <h2 id="classics-title" data-i18n="classics.title"></h2>
+          <p class="sec__lead" data-i18n="classics.lead"></p>
+        </header>
+        <div class="classics">
+          <ul class="books" data-render="classics"></ul>
+          <div class="classics__reader card"><div id="classics-reader"></div></div>
+        </div>
+        <p class="note" data-i18n="classics.source"></p>
+      </div>
+    </section>
+
+    <!-- 8 · Morning briefing -->
+    <section class="sec sec--brief" id="brief" aria-labelledby="brief-title">
+      <div class="tick" data-render="ticker"></div>
+      <div class="wrap">
+        <header data-reveal class="sec__head">
+          <span class="eyebrow" data-i18n="brief.eyebrow"></span>
+          <h2 id="brief-title" data-i18n="brief.title"></h2>
+          <p class="sec__lead" data-i18n="brief.lead"></p>
+        </header>
+        <div class="brief card">
+          <div class="brief__head">
+            <span class="tag" data-i18n="brief.label"></span>
+            <ol class="brief__items"></ol>
+          </div>
+          <div id="brief-reader"></div>
+          <p class="note" data-brief="estimate"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9 · Your own text -->
+    <section class="sec sec--alt" id="try" aria-labelledby="try-title">
+      <div class="wrap">
+        <header data-reveal class="sec__head">
+          <span class="eyebrow" data-i18n="try.eyebrow"></span>
+          <h2 id="try-title" data-i18n="try.title"></h2>
+          <p class="sec__lead" data-i18n="try.lead"></p>
+        </header>
+        <div class="try card">
+          <div class="try__in">
+            <textarea id="try-text" rows="7" data-i18n-attr="placeholder:try.placeholder;aria-label:try.placeholder"></textarea>
+            <div class="try__actions">
+              <button type="button" class="btn btn--primary" data-act="read" data-i18n="try.read"></button>
+              <label class="btn btn--ghost try__file"><input type="file" accept="application/pdf" class="sr-only" id="try-pdf"><span data-i18n="try.pdf"></span></label>
+              <span class="try__status" aria-live="polite"></span>
+            </div>
+            <p class="note note--lock" data-i18n="try.privacy"></p>
+          </div>
+          <div id="try-reader"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10 · App tour -->
+    <section class="sec" id="tour" aria-labelledby="tour-title">
+      <div class="wrap">
+        <header data-reveal class="sec__head">
+          <span class="eyebrow" data-i18n="tour.eyebrow"></span>
+          <h2 id="tour-title" data-i18n="tour.title"></h2>
+        </header>
+        <div class="tour">
+          <div class="tour__phone">
+            <div class="phone phone--tour"><div class="phone__screen" data-render="tourAlt"></div></div>
+          </div>
+          <ol class="tour__steps" data-render="tour"></ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11 · Personalise -->
+    <section class="sec sec--alt" id="personal" aria-labelledby="personal-title">
+      <div class="wrap">
+        <header data-reveal class="sec__head">
+          <span class="eyebrow" data-i18n="personal.eyebrow"></span>
+          <h2 id="personal-title" data-i18n="personal.title"></h2>
+          <p class="sec__lead" data-i18n="personal.lead"></p>
+        </header>
+        <div class="personal">
+          <div class="personal__controls card">
+            <div class="ctl"><span class="ctl__label" data-i18n="personal.theme"></span>
+              <div class="seg" role="group" data-i18n-attr="aria-label:personal.theme">
+                <button type="button" data-set-theme="light" data-i18n="personal.light"></button>
+                <button type="button" data-set-theme="dark" data-i18n="personal.dark"></button>
+              </div></div>
+            <div class="ctl"><span class="ctl__label" data-i18n="personal.font"></span>
+              <div class="seg" role="group" data-i18n-attr="aria-label:personal.font">
+                <button type="button" data-set-font="Inter" style="font-family:'Inter Variable'">Inter</button>
+                <button type="button" data-set-font="Lora" style="font-family:'Lora Variable',serif">Lora</button>
+                <button type="button" data-set-font="Nunito" style="font-family:'Nunito Variable'">Nunito</button>
+              </div>
+              <p class="note" data-i18n="personal.fontNote"></p></div>
+            <div class="ctl"><span class="ctl__label" data-i18n="personal.size"></span>
+              <div class="seg" role="group" data-i18n-attr="aria-label:personal.size">
+                <button type="button" data-set-size="32"></button>
+                <button type="button" data-set-size="42"></button>
+                <button type="button" data-set-size="52"></button>
+                <button type="button" data-set-size="64"></button>
+              </div></div>
+            <div class="ctl ctl--row">
+              <label class="switch"><input type="checkbox" id="pauses-toggle"><span class="switch__ui" aria-hidden="true"></span><span class="ctl__label" data-i18n="personal.pauses"></span></label>
+              <p class="note" data-i18n="personal.pausesNote"></p></div>
+          </div>
+          <div class="personal__demo card"><div id="personal-reader"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12 · Premium -->
+    <section class="sec" id="premium" aria-labelledby="premium-title">
+      <div class="wrap">
+        <header data-reveal class="sec__head sec__head--center">
+          <span class="eyebrow" data-i18n="premium.eyebrow"></span>
+          <h2 id="premium-title" data-i18n="premium.title"></h2>
+        </header>
+        <div class="plans" data-render="premium"></div>
+        <p class="plans__note" data-i18n="premium.credit"></p>
+        <p class="plans__note" data-i18n="premium.price"></p>
+        <p class="note plans__note" data-i18n="premium.limits"></p>
+      </div>
+    </section>
+
+    <!-- 13 · FAQ -->
+    <section class="sec sec--alt" id="faq" aria-labelledby="faq-title">
+      <div class="wrap wrap--narrow">
+        <header data-reveal class="sec__head">
+          <span class="eyebrow" data-i18n="faq.eyebrow"></span>
+          <h2 id="faq-title" data-i18n="faq.title"></h2>
+        </header>
+        <div class="faq" data-render="faq"></div>
+      </div>
+    </section>
+
+    <!-- 14 · Final CTA -->
+    <section class="sec final" id="get" aria-labelledby="final-title">
+      <div class="wrap">
+        <div class="final__reader"><div id="final-reader" class="reader--bare"></div></div>
+        <h2 id="final-title" data-i18n="final.title"></h2>
+        <p class="sec__lead" data-i18n="final.lead"></p>
+<!--@store-->
+      </div>
+    </section>

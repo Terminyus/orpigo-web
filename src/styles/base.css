@@ -9,6 +9,7 @@ body {
   overflow-x: clip;
   transition: background-color .3s, color .3s;
 }
+[hidden] { display: none !important; }
 img { max-width: 100%; height: auto; display: block; }
 a { color: var(--accent); text-underline-offset: 3px; }
 button { font: inherit; color: inherit; }

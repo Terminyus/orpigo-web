@@ -1,0 +1,199 @@
+EN = {
+ "nav": {"how": "How it works", "test": "Test your speed", "try": "Try it", "tour": "The app", "premium": "Premium", "faq": "FAQ", "blog": "Blog", "download": "Download", "theme": "Toggle theme", "lang": "Language", "menu": "Menu", "close": "Close", "home": "Home"},
+ "common": {"wpm": "WPM", "min": "min", "sec": "s", "hour": "h", "default": "default", "measured": "your measurement", "sample": "Sample text", "minutesApprox": "~{n} min", "replay": "Play again", "estimateNote": "Orpigo time includes smart pauses."},
+ "how": {
+  "eyebrow": "The problem",
+  "title": "Your eyes actually jump.",
+  "lead": "When you read a line, your eyes don't glide. They hop from word to word with short stops, sweep back at the end of each line, and sometimes go back to reread a word.",
+  "paragraph": "You open a report on the morning bus. The lines are long and the sentences are dense. Your eyes pause briefly on each word, then jump to the next. At the end of a line they sweep back to the start, and now and then they slip back to something you just read.",
+  "classic": "Traditional reading",
+  "orp": "With Orpigo",
+  "jumps": "Jumps",
+  "regressions": "Regressions",
+  "after": "With Orpigo your eyes stay on one point. You don't jump; the words come to you.",
+  "note": "Illustrative animation. Real eye movements vary by person and text."
+ },
+ "orp": {
+  "eyebrow": "The technique",
+  "title": "ORP: the focal letter of a word",
+  "lead": "The ORP (Optimal Recognition Point) is the letter where a word is considered easiest to recognise, usually just left of centre. Orpigo centres that letter, not the whole word, so you always know exactly where to look.",
+  "word": "understanding",
+  "stepA": "Centre the word and the focal point drifts from word to word.",
+  "stepB": "Centre the ORP letter and the focus stays in one place.",
+  "tryLabel": "Type your own word",
+  "tryPlaceholder": "e.g. reading",
+  "ruleTitle": "The rule in the app",
+  "ruleHead": ["Letters", "Focal letter"],
+  "rules": [["1", "1st"], ["2–8", "2nd"], ["9–12", "3rd"], ["13+", "4th"]],
+  "ruleNote": "Punctuation is not counted.",
+  "live": "{n} letters → letter {k}"
+ },
+ "test": {
+  "eyebrow": "Try it yourself",
+  "title": "Measure your own speed",
+  "lead": "Two short paragraphs, two measurements. First you read normally, then with Orpigo. Both numbers on the result card are yours.",
+  "start": "Start the test",
+  "step1": "1 / 2 · Read normally",
+  "step1Help": "Read the paragraph at your usual pace, for understanding. Press the button when you finish.",
+  "done": "I'm done",
+  "step2": "2 / 2 · Read with Orpigo",
+  "step2Help": "The speed starts a little above your normal pace. Adjust it with the slider if it doesn't feel right.",
+  "startReader": "Start reading",
+  "q": "Quick comprehension check",
+  "skip": "Skip question",
+  "resultTitle": "Your result",
+  "normal": "Normal",
+  "withOrpigo": "With Orpigo",
+  "effective": "Calculated from your actual reading time, pauses included.",
+  "comprehension": "Comprehension: {c} / {t} correct",
+  "honest": "This is a single measurement. Results vary with the text, the day and your focus. In Orpigo you always choose the speed.",
+  "again": "Measure again",
+  "tooFast": "That was very quick. Feel free to try again.",
+  "a": {
+   "text": "For centuries, lighthouses guided sailors home. A ship approaching the coast at night could tell where it was by looking at the light on the horizon. Each lighthouse had its own pattern of flashes, so sailors could tell one from another. Keepers once lived inside them. They lit the lamp, cleaned the glass and kept watch until morning on stormy nights. Today most lighthouses run automatically, and ships find their position by satellite. Still, many lights keep shining. Technology sometimes fails, but a light over the sea can always be seen. Perhaps that is why lighthouses are still seen as symbols of trust and patience.",
+   "q": "According to the text, how did sailors tell lighthouses apart?",
+   "options": ["By their pattern of flashes", "By the colour of the light", "By the height of the tower"],
+   "answer": 0
+  },
+  "b": {
+   "text": "In recent years, small empty lots in cities have been turning into shared gardens. Neighbours get together to clear the soil, build wooden beds and grow vegetables. The work is done in turns: one person waters in the morning while another pulls weeds in the evening. At harvest time the produce is shared, and the extra goes to nearby schools. These gardens are not only about tomatoes and beans. People who lived on the same street for years without saying hello meet here for the first time. Children see with their own eyes how a seed sprouts. Sometimes a bench, sometimes a teapot becomes the busiest corner of the garden. A small patch of soil can be enough for a neighbourhood to get to know itself again.",
+   "q": "What happens to the extra produce?",
+   "options": ["It is sold at the market", "It goes to nearby schools", "It is stored for next year"],
+   "answer": 1
+  }
+ },
+ "calc": {
+  "eyebrow": "Calculate",
+  "title": "How long would this book take you?",
+  "lead": "Enter pages or words and pick your Orpigo speed. See your normal time and your Orpigo time side by side.",
+  "pages": "Pages",
+  "words": "Words",
+  "amount": "Amount",
+  "perPage": "Assumes ~250 words per page.",
+  "normalLabel": "Your normal speed",
+  "orpigoLabel": "Your Orpigo speed",
+  "normalDefault": "Default: 238 WPM, a published average for adult silent reading (Brysbaert, 2019). You can measure your own speed above.",
+  "normalMeasured": "The speed you measured above.",
+  "normalTime": "Normal reading",
+  "orpigoTime": "With Orpigo",
+  "diff": "Difference: {t}"
+ },
+ "life": {
+  "eyebrow": "Everyday reading",
+  "title": "Not just for books",
+  "lead": "Lecture notes, reports, contracts... Tap a card and a short sample of that kind of text plays in the reader.",
+  "pick": "Pick a card",
+  "normally": "Normally",
+  "withOrpigo": "With Orpigo",
+  "assume": "Assumes ~{w} words for the full document. Normal speed: {n} WPM ({src}).",
+  "cards": [
+   {"id": "exam", "title": "Lecture notes", "kind": "Exam PDF", "words": 6000, "text": "Photosynthesis is the process by which plants turn light energy into chemical energy. Chloroplasts in the leaves absorb light. Water molecules are split and oxygen is released. Carbon dioxide is turned into sugar. The point most often asked in exams: the light-dependent reactions take place in the thylakoid membrane, the light-independent reactions in the stroma. Don't mix them up."},
+   {"id": "report", "title": "Business report", "kind": "Quarterly summary", "words": 4000, "text": "This quarter, requests to the support team fell compared with the previous period. The main reason was the redesigned help page. Average response time went down, but waiting time on the weekend shift is still above target. We recommend adding an extra Saturday rota and reviewing the results again next quarter."},
+   {"id": "contract", "title": "Contract", "kind": "Tenancy agreement", "words": 5000, "text": "Clause 4. Rent is paid by the tenant within the first five days of each month into the account named by the landlord. Clause 5. The tenant shall use the property with care and respect the neighbours. Clause 6. Either party wishing to end this agreement shall give at least thirty days' written notice."},
+   {"id": "article", "title": "Article", "kind": "Magazine feature", "words": 2500, "text": "Sleep is the quiet partner of learning. What we take in during the day is reorganised overnight. That is why studying until dawn before an exam rarely pays off. A regular bedtime, short but frequent reviews and a walk during the day are simple habits that support remembering."},
+   {"id": "thesis", "title": "Thesis", "kind": "Master's thesis", "words": 40000, "text": "This study examines the factors that influence cycling in coastal cities. The first chapter presents the theoretical framework. The second chapter describes the method, the sample and the data collection tools. The third chapter discusses the findings, and the final chapter offers recommendations for local governments."},
+   {"id": "novel", "title": "Novel", "kind": "Fiction", "words": 80000, "text": "As the train pulled into the station, Robin looked out of the window. The rain had stopped and the platform lamps were coming on one by one. The town felt both familiar and strange after so many years. Robin took the suitcase, drew a deep breath and stepped into the cold air the moment the doors opened."},
+   {"id": "manual", "title": "User manual", "kind": "Home appliance", "words": 8000, "text": "Before first use, place the appliance on a flat, stable surface. Fill the water tank up to the max line. Press the power button and wait for the indicator light to turn green. Do not open the tank lid while the appliance is running. Unplug the appliance and let it cool down before cleaning."},
+   {"id": "slides", "title": "Speaker notes", "kind": "Meeting", "words": 1500, "text": "Opening: thank everyone, sum up the agenda in three points. Part one: last month's goals and results. Part two: the two problems we hit and the temporary fixes. Closing: agree on one priority for next month and take questions. Time: fifteen minutes at most."},
+   {"id": "newsletter", "title": "Newsletter", "kind": "Weekly digest", "words": 1200, "text": "What's in this week's newsletter? The neighbourhood library will now also open on Saturdays. The sports centre is starting free taster classes for beginners. Volunteer sign-ups for the autumn fair are open. And finally, you'll find our readers' favourite recipe at the end of this issue."}
+  ]
+ },
+ "classics": {
+  "eyebrow": "Revisit the classics",
+  "title": "Short extracts from public-domain classics",
+  "lead": "Pick a book and watch its first lines flow through the reader. A good moment to start an old favourite again.",
+  "died": "d. {y}",
+  "source": "All extracts are from public-domain works. Source: Project Gutenberg.",
+  "items": [
+   {"author": "Jane Austen", "work": "Pride and Prejudice", "year": "1813", "died": "1817", "text": "It is a truth universally acknowledged, that a single man in possession of a good fortune must be in want of a wife."},
+   {"author": "Charles Dickens", "work": "A Tale of Two Cities", "year": "1859", "died": "1870", "text": "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair."},
+   {"author": "Oscar Wilde", "work": "The Picture of Dorian Gray", "year": "1890", "died": "1900", "text": "The studio was filled with the rich odour of roses, and when the light summer wind stirred amidst the trees of the garden, there came through the open door the heavy scent of the lilac, or the more delicate perfume of the pink-flowering thorn."}
+  ]
+ },
+ "brief": {
+  "ticker": ["SAMPLE TEXT", "Neighbourhood library now open at weekends", "Seafront cycle lane completed", "Volunteer clean-up in the park on Saturday", "Cool, partly cloudy weekend ahead", "Night services added to city buses"],
+  "eyebrow": "Morning briefing",
+  "title": "Read today's summary in under 2 minutes",
+  "lead": "Four short stories before your coffee gets cold. These texts are fictional and written only as samples.",
+  "estimate": "At {wpm} WPM this summary takes about {t}.",
+  "label": "Sample text · Fictional",
+  "items": [
+   {"title": "Library now open at weekends", "text": "From this month, the neighbourhood library will also be open on Saturdays and Sundays. The management said it extended the hours after requests from readers who work during the week. There will be a story hour for children at weekends, and the quiet reading room for adults will stay open until the evening. Visitors without a library card can apply with their ID and get one the same day."},
+   {"title": "New cycle lane on the seafront", "text": "The last section of the seafront cycle lane has been completed. The new lane connects the pier and the old harbour without a break. Rest stops, drinking fountains and bike racks have been added along the way. Officials reminded everyone that the footpath and the cycle lane are marked in different colours and asked people to keep to their own lane."},
+   {"title": "Volunteer clean-up in the park", "text": "A volunteer clean-up day will be held in the city park this Saturday at nine in the morning. Gloves and bin bags will be handed out by the organisers. Participants will split into groups to clean the lawns, the playground and the lakeside. Volunteers will be offered tea at the end. If it rains, the event will be moved to the following week."},
+   {"title": "Weekend weather", "text": "The weekend will be cool and partly cloudy. A short shower is expected on Saturday afternoon, while Sunday will be sunny. The wind may pick up at times along the coast. Anyone heading out in the morning or evening is advised to bring a light jacket."}
+  ]
+ },
+ "try": {
+  "eyebrow": "Your own text",
+  "title": "Try your own text",
+  "lead": "Paste some text or pick a small PDF and read it with Orpigo.",
+  "placeholder": "Paste the text you want to read here…",
+  "read": "Read with Orpigo",
+  "pdf": "Choose a PDF",
+  "pdfLoading": "Reading PDF…",
+  "pdfDone": "Extracted {w} words from {p} pages.",
+  "pdfError": "Couldn't extract text from this PDF. It may be a scanned document.",
+  "pdfTooBig": "This demo works with up to 10 MB and the first 30 pages. The app can read larger documents.",
+  "empty": "Paste some text first.",
+  "privacy": "Everything runs in your browser. Your text and PDF are never sent anywhere or saved.",
+  "words": "{n} words"
+ },
+ "tour": {
+  "eyebrow": "App tour",
+  "title": "Start reading in six steps",
+  "steps": [
+   {"t": "Choose your language", "d": "Turkish or English. You can change it later in settings.", "img": "screen-language", "alt": "Language selection screen"},
+   {"t": "Quick intro", "d": "See how Orpigo reads in the first minute with a live ORP preview.", "img": "screen-onboarding-rsvp", "alt": "ORP preview in the intro"},
+   {"t": "Upload a PDF", "d": "Pick a document and it goes into your library. Sign in with Apple, Google or as a guest.", "img": "screen-onboarding-library", "alt": "PDF upload intro screen"},
+   {"t": "Automatic processing", "d": "Orpigo extracts the text and gets it ready. Processed documents can be read offline.", "img": "screen-library", "alt": "Library with a processed document"},
+   {"t": "Pick up where you left off", "d": "Your progress is saved. Open a document and continue from the word where you stopped.", "img": "android-reader_light", "alt": "Reading screen"},
+   {"t": "Set your speed", "d": "Anywhere from 100 to 1000 words per minute, whatever feels comfortable.", "img": "screen-onboarding-speed", "alt": "Speed selection screen"}
+  ]
+ },
+ "personal": {
+  "eyebrow": "Personalise",
+  "title": "Your reading, your way",
+  "lead": "Try the app's settings here. Your choices apply instantly to every reader on this page.",
+  "theme": "Theme", "light": "Light", "dark": "Dark",
+  "font": "Interface font",
+  "fontNote": "The reader always uses JetBrains Mono, just like in the app.",
+  "size": "Text size", "sizes": ["Small", "Medium", "Large", "XL"],
+  "pauses": "Smart pauses",
+  "pausesNote": "Waits 2× at the end of a sentence, 1.5× at a comma and 1.3× on words longer than 9 letters.",
+  "demo": "With smart pauses on, punctuation gets a short breath. Long words stay on screen a little longer; short ones flow quickly. Turn them off and every word gets exactly the same time."
+ },
+ "premium": {
+  "eyebrow": "Plans",
+  "title": "Start free, go Premium if you like",
+  "free": "Free",
+  "pro": "Premium",
+  "freeItems": ["Limited PDF uploads", "Basic reading speed range", "Light and dark theme, 3 fonts", "Smart pauses", "Pick up where you left off"],
+  "proItems": ["Unlimited PDFs and pages", "Files up to 20 MB", "Reading speed up to 1000 WPM", "Priority support"],
+  "credit": "Don't want a subscription? Upload an extra document with a one-off PDF credit.",
+  "price": "Current prices are shown in the app. Subscriptions are monthly or yearly and can be cancelled any time from your store account.",
+  "limits": "You can see the current limits for your account in the app under Profile > Purchase Centre."
+ },
+ "faq": {
+  "eyebrow": "FAQ",
+  "title": "Frequently asked questions",
+  "items": [
+   ["What is RSVP?", "RSVP (Rapid Serial Visual Presentation) is a reading technique where words appear one at a time in the same place. Your eyes stay still and the words come to them."],
+   ["What is ORP?", "The ORP (Optimal Recognition Point) is the letter where a word is considered easiest to recognise. Orpigo aligns every word on that letter and shows it in red."],
+   ["Will I lose comprehension if I read fast?", "At very high speeds comprehension can drop, which is why you choose the speed. Start where you're comfortable and go up as you get used to it. If you miss something, jump back to the previous sentence."],
+   ["Can I upload my own PDFs?", "Yes. Upload a PDF and Orpigo extracts the text and adds it to your library. Text-based PDFs are processed directly; scanned, image-based PDFs need OCR."],
+   ["Can I pick up where I left off?", "Yes. Your progress is saved automatically. The \"Continue Reading\" card on the home screen takes you back with one tap."],
+   ["Does it work offline?", "You can read processed documents without an internet connection. Uploading and processing a PDF needs a connection."],
+   ["Can I try it without an account?", "In the app you can continue as a guest. The demos on this page don't need any account."],
+   ["Is it free?", "You can use Orpigo for free. Premium adds unlimited PDFs, larger files and higher speeds. Current prices are shown in the app."],
+   ["Does it handle Turkish text?", "Yes. Turkish characters (ş, ğ, ü, ö, ç, ı) are fully supported. The app interface is available in Turkish and English."],
+   ["Where is my data kept?", "PDFs you upload are stored only in your account's private area and are permanently deleted when you delete your account. See the Privacy Policy for details."]
+  ]
+ },
+ "final": {
+  "title": "Ready to read differently?",
+  "text": "Read faster. Remember more. Orpigo is waiting for you.",
+  "lead": "Get the app, upload your first PDF and read at your own pace."
+ },
+ "legal": {"trOnly": "This page is published in Turkish only.", "back": "← Home"}
+}

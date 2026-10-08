@@ -1,8 +1,9 @@
 /* Colour tokens — 1:1 from lib/core/theme/color_tokens.dart (see docs/brand.md).
    No colours outside this file. */
 :root {
-  --bg: #F7F8FC;
-  --surface: #FFFFFF;
+  --bg: #FFFFFF;               /* lightSurface — page is white */
+  --bg-alt: #F7F8FC;           /* lightBackground — alternating sections */
+  --surface: #F7F8FC;          /* cards sit on white, so use the app's background tone */
   --surface-2: #EEF0F6;
   --surface-3: #E4E7F0;
   --text: #2D3142;
@@ -21,27 +22,9 @@
   color-scheme: light;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #0E0F15;
-    --surface: #16182A;
-    --surface-2: #1E2134;
-    --surface-3: #262A40;
-    --text: #F2F4F8;
-    --text-2: #A0A6B5;
-    --text-3: #A0A6B5;       /* darkTextTertiary #6A7182 is < 4.5:1 for small text */
-    --border: #25283B;
-    --border-subtle: #1F2338;
-    --accent: #CC2936;
-    --pivot: #CC2936;
-    --shadow: 0 10px 24px rgb(0 0 0 / 0.3);
-    --shadow-lg: 0 30px 60px -20px rgb(0 0 0 / 0.6);
-    color-scheme: dark;
-  }
-}
-
 :root[data-theme="dark"] {
   --bg: #0E0F15;
+  --bg-alt: #16182A;
   --surface: #16182A;
   --surface-2: #1E2134;
   --surface-3: #262A40;
