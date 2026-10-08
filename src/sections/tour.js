@@ -21,7 +21,11 @@ export function initTour() {
     };
     io = new IntersectionObserver((entries) => {
       for (const e of entries) if (e.isIntersecting) set(+e.target.dataset.step);
-    }, { rootMargin: '-45% 0px -45% 0px' });
+    }, {
+      // On phones the sticky mockup covers the top of the screen, so steps
+      // activate in the band just below it.
+      rootMargin: matchMedia('(max-width: 860px)').matches ? '-60% 0px -30% 0px' : '-45% 0px -45% 0px',
+    });
     steps.forEach((s) => io.observe(s));
     set(0);
   }

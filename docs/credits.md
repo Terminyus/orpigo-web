@@ -12,6 +12,9 @@ or drawn in SVG/CSS for this site. Third-party components:
 | JetBrains Mono via `@fontsource/jetbrains-mono` | SIL OFL 1.1 | RSVP reader (the app's reader font) |
 | GSAP 3 | GreenSock standard "no charge" licence | Scroll and intro animation |
 | Lenis | MIT | Smooth scrolling |
+| pdf.js (`pdfjs-dist`, Mozilla) | Apache-2.0 | In-browser PDF text extraction (section 9, loaded on demand) |
 | Vite, Vitest | MIT | Build and tests |
 
 Quoted literary texts are listed with author and death year in `docs/copyright.md`.
+
+The OG image (`public/og.png`) is rendered from `scripts/og.html` with the fonts above and the Orpigo logo.

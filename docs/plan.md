@@ -9,6 +9,9 @@ sınamak için de kullanılır: Animasyon ya gözün nereye baktığını ya da 
 - WPM aralığı: **100–1000** (kod ile aynı). Premium bölümünde ücretsiz planın sınırı belirtilir.
 - Deploy: GitHub Actions (token'a `workflow` yetkisi kullanıcı tarafından eklenecek).
 - Yerel repo: `~/Desktop/orpigo-web`.
+- Sayfa zemini beyaz (`#FFFFFF`); site işletim sistemi ayarına bakmadan açık temayla açılır, koyu tema yalnızca düğmeyle.
+- Brifteki "Günün özetini 2 dakikada oku" başlığı, gerçek süreyle tutarlı olsun diye "2 dakikadan kısa sürede" yapıldı; süre hız seçimine göre canlı hesaplanır.
+- Uygulama içindeki fiyatlar yalnızca önizleme yer tutucusu olduğu için sitede fiyat yok.
 
 ## Yığın
 - **Vite + vanilla JS (ES modules)**: Statik çıktı verir, framework yükü yoktur ve çok sayfalı build ile `/blog/`, `/privacy/` gibi yolları gerçek klasörler olarak üretir.

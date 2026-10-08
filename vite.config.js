@@ -6,7 +6,8 @@ import { renderers } from './src/render.js';
 
 const ROOT = path.dirname(new URL(import.meta.url).pathname);
 // GitHub Pages preview lives at /orpigo-web/. For the live site set BASE=/
-const BASE = process.env.BASE ?? '/orpigo-web/';
+const LIVE = process.env.LIVE === '1';
+const BASE = process.env.BASE ?? (LIVE ? '/' : '/orpigo-web/');
 
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
 
@@ -69,7 +70,12 @@ function site() {
         const is404 = rel === '404.html';
         const root = is404 ? BASE : depth ? '../'.repeat(depth) : './';
         html = include(html).replaceAll('{{root}}', root).replaceAll('{{home}}', depth || is404 ? root : '');
-        return prerender(html, t);
+        html = prerender(html, t);
+        if (LIVE) {
+          html = html.replace(/\s*<!-- PREVIEW:[^>]*-->\s*<meta name="robots" content="noindex, nofollow">/g, '')
+            .replace(/\s*<small data-i18n="footer.preview">[^<]*<\/small>/g, '');
+        }
+        return html;
       },
     },
   };
@@ -92,9 +98,24 @@ function preloadFonts() {
   };
 }
 
+/** Live build: real robots.txt instead of the preview's Disallow-all. */
+function liveRobots() {
+  return {
+    name: 'live-robots',
+    apply: 'build',
+    closeBundle() {
+      const out = path.join(ROOT, 'dist');
+      const live = path.join(out, 'robots.live.txt');
+      if (!fs.existsSync(live)) return;
+      if (LIVE) fs.copyFileSync(live, path.join(out, 'robots.txt'));
+      fs.unlinkSync(live);
+    },
+  };
+}
+
 export default defineConfig({
   base: BASE,
-  plugins: [site(), preloadFonts()],
+  plugins: [site(), preloadFonts(), liveRobots()],
   build: { target: 'es2020', rollupOptions: { input: pages() } },
   test: { environment: 'node', include: ['tests/**/*.test.js'] },
 });

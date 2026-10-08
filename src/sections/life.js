@@ -49,7 +49,7 @@ export function initLife() {
     const card = t('life.cards').find((c) => c.id === id);
     panel.hidden = false;
     $('[data-life=title]', panel).textContent = `${card.title} · ${card.kind}`;
-    if (!reader) reader = createReader($('#life-reader', panel), { text: card.text, wpm: 300, onWpm: times, label: card.title });
+    if (!reader) reader = createReader($('#life-reader', panel), { text: card.text, wpm: 400, onWpm: times, label: card.title });
     else reader.load(card.text, { autoplay: false, label: card.title });
     if (autoplay && !store.reducedMotion()) reader.play();
     marquee.classList.add('is-held');
