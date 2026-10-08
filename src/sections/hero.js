@@ -15,8 +15,7 @@ export function initHero() {
   if (reduce) return;
   const tl = gsap.timeline({ delay: 0.15 });
   tl.from('.hero__axis', { scaleY: 0, duration: 0.9, ease: 'power3.inOut' })
-    .from('#hero-reader .rsvp__rail', { opacity: 0, scaleX: 0, duration: 0.4, stagger: 0.08 }, '-=0.3')
-    .from('#hero-reader .rsvp__word', { opacity: 0, duration: 0.35, clearProps: 'opacity' }, '-=0.1')
+    .from('#hero-reader .rsvp__rail', { opacity: 0, duration: 0.4, stagger: 0.08 }, '-=0.3')
     // Copy and phone stay visible from the first paint (LCP); only a small settle.
     .from('.hero__phone .phone', { y: 24, duration: 0.9, ease: 'power3.out' }, 0.2)
     .add(() => reader.play(), '+=0.25');
