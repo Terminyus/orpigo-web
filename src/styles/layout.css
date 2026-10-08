@@ -82,3 +82,7 @@
 .site-footer nav a { color: var(--text-2); text-decoration: none; }
 .site-footer nav a:hover { color: var(--accent); }
 .site-footer small { color: var(--text-3); display: block; margin-top: 8px; }
+
+/* Reserve the hero reader's final height before JS builds it (no layout shift). */
+#hero-reader { min-height: calc(var(--size) * 3.2 + 99px); }
+@media (max-width: 440px) { #hero-reader { min-height: calc(var(--size) * 3.2 + 167px); } }

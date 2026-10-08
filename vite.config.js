@@ -75,9 +75,26 @@ function site() {
   };
 }
 
+/** Preload the Latin subsets of the fonts used above the fold. */
+function preloadFonts() {
+  const want = [/inter-latin-wght-normal/, /outfit-latin-wght-normal/, /outfit-latin-ext-wght-normal/, /jetbrains-mono-latin-400-normal.*\.woff2$/, /jetbrains-mono-latin-ext-400-normal.*\.woff2$/];
+  return {
+    name: 'preload-fonts',
+    transformIndexHtml: {
+      order: 'post',
+      handler(html, ctx) {
+        if (!ctx.bundle) return html;
+        const files = Object.keys(ctx.bundle).filter((f) => f.endsWith('.woff2') && want.some((re) => re.test(f)));
+        const tags = files.map((f) => `  <link rel="preload" href="${BASE}${f}" as="font" type="font/woff2" crossorigin>`).join('\n');
+        return html.replace('</title>', `</title>\n${tags}`);
+      },
+    },
+  };
+}
+
 export default defineConfig({
   base: BASE,
-  plugins: [site()],
+  plugins: [site(), preloadFonts()],
   build: { target: 'es2020', rollupOptions: { input: pages() } },
   test: { environment: 'node', include: ['tests/**/*.test.js'] },
 });
