@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "title": "Orpigo — Daha hızlı oku. Daha çok hatırla.",
+    "description": "Orpigo, PDF'lerini kelime kelime, gözünün odak noktasında gösteren RSVP + ORP hız okuma uygulaması. iOS ve Android."
+  },
+  "skip": "İçeriğe geç",
+  "nav": {
+    "how": "Nasıl çalışır",
+    "test": "Hızını ölç",
+    "try": "Dene",
+    "tour": "Uygulama",
+    "premium": "Premium",
+    "faq": "SSS",
+    "blog": "Blog",
+    "download": "İndir",
+    "theme": "Temayı değiştir",
+    "lang": "Dil",
+    "menu": "Menü"
+  },
+  "reader": {
+    "label": "Hız okuyucu. Boşluk: oynat veya durdur. Oklar: kelime ve hız.",
+    "play": "Oynat",
+    "pause": "Durdur",
+    "back": "Önceki cümle",
+    "fwd": "Sonraki cümle",
+    "speed": "Okuma hızı (kelime/dakika)"
+  },
+  "hero": {
+    "eyebrow": "RSVP + ORP hız okuma",
+    "text": "Gözünü kırmızı harfte tut. Orpigo, PDF'lerini kelime kelime tam bu noktada gösterir. Gözün satır boyunca gezmez, yalnızca odaklanır. Her kelimenin kırmızı harfi, gözün onu en hızlı tanıdığı yerdir. Hızı aşağıdan sen seçersin: dakikada 100 ile 1000 kelime arasında. Noktalamada kısa bir nefes payı bırakılır. Kaldığın yer hatırlanır. Şimdi kendi PDF'in için uygulamayı indir.",
+    "title": "Daha hızlı oku.<br><em>Daha çok hatırla.</em>",
+    "lead": "Orpigo, PDF'lerini kelime kelime gözünün odak noktasında gösterir. Gözün satırda gezinmez; sadece okursun.",
+    "hint": "Okuyucuya dokun veya Boşluk tuşuna bas.",
+    "phoneAlt": "Orpigo okuma ekranı: ortada tek bir kelime, altında hız kaydırıcısı ve oynat düğmesi."
+  },
+  "store": {
+    "appstore_small": "İndir",
+    "appstore": "App Store",
+    "play_small": "Edin",
+    "play": "Google Play"
+  },
+  "footer": {
+    "tagline": "Daha hızlı oku. Daha çok hatırla.",
+    "privacy": "Gizlilik Politikası",
+    "terms": "Kullanım Koşulları",
+    "support": "Destek",
+    "blog": "Blog",
+    "delete": "Hesap Silme",
+    "rights": "© 2026 Candemsoft. Tüm hakları saklıdır.",
+    "preview": "Önizleme sürümü"
+  }
+}

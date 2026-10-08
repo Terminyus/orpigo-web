@@ -1,0 +1,84 @@
+/* RSVP reader — geometry follows lib/screens/reader/widgets/orp_word_display.dart:
+   box height = fontSize × 3.2, radius 20, guide line 2 × (fontSize × 1.6) at 18 %,
+   top/bottom rails 28 × 2 at 25 %, pivot weight 700, swap fade 60 ms to 0.65. */
+.reader { --size: calc(var(--rsvp-size) * var(--rsvp-scale, 1)); display: grid; gap: 18px; }
+
+.rsvp {
+  position: relative;
+  height: calc(var(--size) * 3.2);
+  border-radius: 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+.reader--bare .rsvp { background: none; border-color: transparent; overflow: visible; }
+
+.rsvp__guide { position: absolute; inset: 0; pointer-events: none; }
+.rsvp__line, .rsvp__rail { position: absolute; left: 50%; display: block; border-radius: 1px; }
+.rsvp__line {
+  top: 50%; width: 2px; height: calc(var(--size) * 1.6);
+  background: color-mix(in srgb, var(--pivot) 18%, transparent);
+  transform: translate(-50%, -50%);
+}
+.rsvp__rail { width: 28px; height: 2px; background: color-mix(in srgb, var(--pivot) 25%, transparent); transform: translateX(-50%); }
+.rsvp__rail--top { top: 0; }
+.rsvp__rail--bottom { bottom: 0; }
+.reader--bare .rsvp__rail { width: 44px; height: 3px; background: var(--pivot); opacity: .55; }
+
+.rsvp__word {
+  position: absolute; left: 50%; top: 50%;
+  white-space: pre;
+  font: 400 var(--size) / 1.2 var(--font-read);
+  letter-spacing: 0;
+  font-variant-ligatures: none;
+  color: var(--text);
+  will-change: transform;
+}
+.rsvp__before { color: var(--text-2); }
+.rsvp__pivot { color: var(--pivot); font-weight: 700; }
+.rsvp__word.is-swap { animation: rsvp-swap 60ms ease-in; }
+@keyframes rsvp-swap { from { opacity: .65; } to { opacity: 1; } }
+
+.reader__progress { height: 3px; border-radius: 2px; background: var(--surface-3); overflow: hidden; }
+.reader__progress i { display: block; height: 100%; background: var(--accent); transform-origin: left; transform: scaleX(0); transition: transform .12s linear; }
+
+.reader__controls { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.btn-icon, .btn-play {
+  display: grid; place-items: center; border: 0; cursor: pointer; border-radius: 14px;
+  transition: transform .15s var(--ease), background-color .2s;
+}
+.btn-icon { width: 48px; height: 48px; background: var(--surface-2); color: var(--text); }
+.btn-icon:hover { background: var(--surface-3); }
+.btn-icon svg { width: 22px; height: 22px; }
+.btn-play {
+  width: 60px; height: 60px; border-radius: 50%; background: var(--accent); color: var(--on-accent);
+  box-shadow: 0 8px 22px -6px color-mix(in srgb, var(--accent) 60%, transparent);
+}
+.btn-play svg { width: 26px; height: 26px; fill: currentColor; }
+.btn-play:active, .btn-icon:active { transform: scale(.93); }
+
+.wpm { flex: 1 1 200px; display: grid; gap: 6px; min-width: 180px; }
+.wpm__value { font: 700 22px/1 var(--font-display); color: var(--accent); }
+.wpm__value small { font: 500 12px var(--font-ui); color: var(--text-2); letter-spacing: .06em; }
+
+input[type=range] {
+  -webkit-appearance: none; appearance: none; width: 100%; height: 28px; background: none; margin: 0; cursor: pointer;
+  --p: 0%;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  height: 4px; border-radius: 2px;
+  background: linear-gradient(to right, var(--accent) var(--p), var(--surface-3) var(--p));
+}
+input[type=range]::-moz-range-track { height: 4px; border-radius: 2px; background: var(--surface-3); }
+input[type=range]::-moz-range-progress { height: 4px; border-radius: 2px; background: var(--accent); }
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none; width: 22px; height: 22px; border-radius: 50%; margin-top: -9px;
+  background: var(--accent); border: 3px solid var(--surface); box-shadow: 0 1px 4px rgb(0 0 0 / .2);
+}
+input[type=range]::-moz-range-thumb {
+  width: 18px; height: 18px; border-radius: 50%; background: var(--accent); border: 3px solid var(--surface);
+}

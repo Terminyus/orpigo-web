@@ -1,0 +1,84 @@
+/* Header */
+.site-header {
+  position: sticky; top: 0; z-index: 50;
+  background: color-mix(in srgb, var(--bg) 82%, transparent);
+  backdrop-filter: saturate(1.4) blur(14px); -webkit-backdrop-filter: saturate(1.4) blur(14px);
+  border-bottom: 1px solid transparent; transition: border-color .3s;
+}
+.site-header.is-scrolled { border-bottom-color: var(--border); }
+.site-header .wrap { display: flex; align-items: center; gap: 20px; height: 68px; }
+.brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text); margin-right: auto; }
+.brand img { width: 34px; height: 34px; }
+.brand b { font: 700 19px/1 var(--font-display); letter-spacing: .14em; }
+.nav { display: flex; gap: 4px; }
+.nav a { padding: 8px 12px; border-radius: 10px; text-decoration: none; color: var(--text-2); font-size: 15px; font-weight: 500; }
+.nav a:hover { color: var(--text); background: var(--surface-2); }
+.tools { display: flex; align-items: center; gap: 8px; }
+.seg { display: inline-flex; padding: 3px; border-radius: 12px; background: var(--surface-2); }
+.seg button {
+  border: 0; background: none; min-width: 40px; height: 34px; border-radius: 9px; cursor: pointer;
+  font: 600 13px/1 var(--font-ui); color: var(--text-2);
+}
+.seg button[aria-pressed="true"] { background: var(--surface); color: var(--text); box-shadow: 0 1px 3px rgb(0 0 0 / .12); }
+.icon-btn {
+  width: 40px; height: 40px; display: grid; place-items: center; border-radius: 12px; border: 0; cursor: pointer;
+  background: var(--surface-2); color: var(--text);
+}
+.icon-btn svg { width: 20px; height: 20px; }
+.theme-ico-dark { display: none; }
+:root[data-theme="dark"] .theme-ico-dark { display: block; }
+:root[data-theme="dark"] .theme-ico-light { display: none; }
+.menu-btn { display: none; }
+@media (max-width: 980px) {
+  .nav { display: none; }
+  .header-cta { display: none; }
+}
+
+/* Hero */
+.hero { position: relative; padding: clamp(28px, 6vh, 72px) 0 clamp(56px, 9vh, 110px); }
+.hero .wrap { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: clamp(32px, 5vw, 80px); align-items: center; }
+.hero__main { display: grid; gap: 28px; min-width: 0; }
+.hero__reader { --rsvp-scale: 1.45; position: relative; }
+.hero__axis {
+  position: absolute; left: 50%; width: 1px; top: -30vh; height: calc(30vh + 50%);
+  background: linear-gradient(to bottom, transparent, var(--guide) 70%);
+  transform-origin: bottom; pointer-events: none;
+}
+.hero__reader .reader__controls { justify-content: center; }
+.hero__hint { text-align: center; color: var(--text-3); font-size: 14px; margin-top: -6px; }
+.hero__copy { display: grid; gap: 18px; padding-top: 12px; border-top: 1px solid var(--border); }
+.hero h1 { font-size: clamp(38px, 5.4vw, 68px); font-weight: 700; letter-spacing: -0.035em; }
+.hero h1 em { font-style: normal; color: var(--accent); }
+.hero__lead { font-size: clamp(17px, 1.5vw, 19px); color: var(--text-2); max-width: 34em; }
+
+.phone {
+  position: relative; width: min(300px, 78vw); margin-inline: auto; aspect-ratio: 440 / 900;
+  border-radius: 46px; padding: 11px; background: var(--frame);
+  box-shadow: 0 0 0 1px var(--border), var(--shadow-lg);
+}
+.phone::before {
+  content: ''; position: absolute; top: 20px; left: 50%; width: 30%; height: 22px; border-radius: 12px;
+  background: var(--frame); transform: translateX(-50%); z-index: 2;
+}
+.phone__screen { position: relative; height: 100%; border-radius: 36px; overflow: hidden; background: var(--bg); }
+.phone__screen picture, .phone__screen img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top; }
+.only-dark { display: none; }
+:root[data-theme="dark"] .only-dark { display: block; }
+:root[data-theme="dark"] .only-light { display: none; }
+
+@media (max-width: 900px) {
+  .hero .wrap { grid-template-columns: 1fr; }
+  .hero__reader { --rsvp-scale: 1.05; }
+  .hero__phone { order: 3; }
+}
+@media (max-width: 420px) {
+  .hero__reader { --rsvp-scale: .9; }
+}
+
+/* Footer */
+.site-footer { border-top: 1px solid var(--border); padding: 48px 0 40px; margin-top: 40px; font-size: 15px; }
+.site-footer .wrap { display: flex; flex-wrap: wrap; gap: 24px 40px; align-items: flex-start; justify-content: space-between; }
+.site-footer nav { display: flex; flex-wrap: wrap; gap: 8px 22px; }
+.site-footer nav a { color: var(--text-2); text-decoration: none; }
+.site-footer nav a:hover { color: var(--accent); }
+.site-footer small { color: var(--text-3); display: block; margin-top: 8px; }

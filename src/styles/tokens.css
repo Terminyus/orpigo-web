@@ -1,0 +1,73 @@
+/* Colour tokens — 1:1 from lib/core/theme/color_tokens.dart (see docs/brand.md).
+   No colours outside this file. */
+:root {
+  --bg: #F7F8FC;
+  --surface: #FFFFFF;
+  --surface-2: #EEF0F6;
+  --surface-3: #E4E7F0;
+  --text: #2D3142;
+  --text-2: #4B5563;
+  --text-3: #6B7280;
+  --border: #E5E7EB;
+  --border-subtle: #E8EAF2;
+  --accent: #B01E2A;          /* accentLight: buttons, links, ORP on light */
+  --accent-logo: #CC2936;     /* accentDark: logo red, large decorative marks */
+  --on-accent: #FFFFFF;
+  --pivot: var(--accent);
+  --accent-muted: rgb(204 41 54 / 0.10);
+  --guide: rgb(204 41 54 / 0.15);
+  --shadow: 0 10px 24px rgb(45 49 66 / 0.06);
+  --shadow-lg: 0 30px 60px -20px rgb(45 49 66 / 0.25);
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0E0F15;
+    --surface: #16182A;
+    --surface-2: #1E2134;
+    --surface-3: #262A40;
+    --text: #F2F4F8;
+    --text-2: #A0A6B5;
+    --text-3: #A0A6B5;       /* darkTextTertiary #6A7182 is < 4.5:1 for small text */
+    --border: #25283B;
+    --border-subtle: #1F2338;
+    --accent: #CC2936;
+    --pivot: #CC2936;
+    --shadow: 0 10px 24px rgb(0 0 0 / 0.3);
+    --shadow-lg: 0 30px 60px -20px rgb(0 0 0 / 0.6);
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #0E0F15;
+  --surface: #16182A;
+  --surface-2: #1E2134;
+  --surface-3: #262A40;
+  --text: #F2F4F8;
+  --text-2: #A0A6B5;
+  --text-3: #A0A6B5;
+  --border: #25283B;
+  --border-subtle: #1F2338;
+  --accent: #CC2936;
+  --pivot: #CC2936;
+  --shadow: 0 10px 24px rgb(0 0 0 / 0.3);
+  --shadow-lg: 0 30px 60px -20px rgb(0 0 0 / 0.6);
+  color-scheme: dark;
+}
+
+:root {
+  --font-ui: 'Inter Variable', system-ui, sans-serif;
+  --font-display: 'Outfit Variable', var(--font-ui);
+  --font-read: 'JetBrains Mono', ui-monospace, monospace; /* the app's reader font */
+  --rsvp-size: 42px;          /* AppConstants.fontSizeMedium */
+  --radius: 16px;
+  --radius-lg: 28px;
+  --gutter: clamp(16px, 4vw, 40px);
+  --max: 1200px;
+  --ease: cubic-bezier(.2, .7, .1, 1);
+}
+:root[data-ui-font="Lora"] { --font-ui: 'Lora Variable', Georgia, serif; }
+:root[data-ui-font="Nunito"] { --font-ui: 'Nunito Variable', system-ui, sans-serif; }
+:root { --frame: #0E0F15; } /* phone frame = darkBackground in both themes */

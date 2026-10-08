@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "title": "Orpigo — Read faster. Remember more.",
+    "description": "Orpigo is an RSVP + ORP speed reading app that shows your PDFs one word at a time, right at your eye's focal point. iOS and Android."
+  },
+  "skip": "Skip to content",
+  "nav": {
+    "how": "How it works",
+    "test": "Test your speed",
+    "try": "Try it",
+    "tour": "The app",
+    "premium": "Premium",
+    "faq": "FAQ",
+    "blog": "Blog",
+    "download": "Download",
+    "theme": "Toggle theme",
+    "lang": "Language",
+    "menu": "Menu"
+  },
+  "reader": {
+    "label": "Speed reader. Space: play or pause. Arrows: word and speed.",
+    "play": "Play",
+    "pause": "Pause",
+    "back": "Previous sentence",
+    "fwd": "Next sentence",
+    "speed": "Reading speed (words per minute)"
+  },
+  "hero": {
+    "eyebrow": "RSVP + ORP speed reading",
+    "text": "Keep your eyes on the red letter. Orpigo shows your PDFs one word at a time, right at this point. Your eyes stop travelling along the line and simply focus. The red letter in each word is where your eye recognises it fastest. You choose the pace below: anywhere from 100 to 1000 words per minute. Punctuation gets a short breath. Your place is remembered. Now get the app for your own PDFs.",
+    "title": "Read faster.<br><em>Remember more.</em>",
+    "lead": "Orpigo shows your PDFs one word at a time, at your eye's focal point. No scanning along lines. You just read.",
+    "hint": "Tap the reader or press Space.",
+    "phoneAlt": "Orpigo reading screen: a single word in the centre, a speed slider and play button below."
+  },
+  "store": {
+    "appstore_small": "Download on the",
+    "appstore": "App Store",
+    "play_small": "Get it on",
+    "play": "Google Play"
+  },
+  "footer": {
+    "tagline": "Read faster. Remember more.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "support": "Support",
+    "blog": "Blog",
+    "delete": "Delete Account",
+    "rights": "© 2026 Candemsoft. All rights reserved.",
+    "preview": "Preview build"
+  }
+}
